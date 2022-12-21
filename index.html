@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
     <script type="text/JavaScript" src="https://MomentJS.com/downloads/moment.js"></script>
-    <script src=""></script>
+    
 </head>
 <body>
     <header>
@@ -20,17 +20,24 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3 sidenav">
-                <h4>Search for a City</h4>
-                <input type="text" class="form-control">
-                <span class="input-group-btn">
-                <button class="btn btn-default" type="button">
-                    <span class="glyphicon glyphicon-search">Search</span>
-                </button>
+                <div class="row">
+                    <h4>Search for a City</h4>
+                    <input type="text" class="form-control" id="inputVal">
+                    
+                    <button class="btn btn-default" id="searchbtn" type="button">
+                        <span class="glyphicon glyphicon-search">Search</span>
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="msg"></div>
+                </div>
+                <div class="row" id="history">
+                </div>
             </div>
             <div class="col-sm-8">
                 <div class="row">
                     <div class="card card-body">
-                        <h2 id="city"></h2>
+                        <div id="setImg"><h2 id="city"></h2> <img id="icon"></div>
                         <p id="temp">Temp : </p>
                         <p id="wind">Wind : </p>
                         <p id="humidity">Humidity : </p>
@@ -62,6 +69,7 @@
             
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/JavaScript" src="./Assets/script/script.js"></script>
 </body>
 </html>
